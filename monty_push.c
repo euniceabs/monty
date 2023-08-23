@@ -24,21 +24,17 @@ void f_push(stack_t **head, unsigned int line_counter)
 		fprintf(stderr, "L%d: usage: push integer\n", line_counter);
 		exit(EXIT_FAILURE);
 	}
-
 	if (argument[0] == '-')
 	{
 		p++;
-
 	for (; argument[p] != '\0'; p++)
 	{
-
-	if (argument[p] < '0' || argument[p] > '9')
+		if (argument[p] < '0' || argument[p] > '9')
 	{
 		flag = 1;
 		break;
 	}
 	}
-
 	if (flag == 1)
 	{
 	fprintf(stderr, "L%d: usage: push integer\n", line_counter);
@@ -47,7 +43,6 @@ void f_push(stack_t **head, unsigned int line_counter)
 	}
 
 	v = atoi(argument);
-
 	if (flag == 0)
 	{
 		if (bus.lifi == 0)
