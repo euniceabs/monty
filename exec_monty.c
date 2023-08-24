@@ -22,6 +22,7 @@ int exec(char *line_content, stack_t **stack,
 				{"add", f_add},
 				{"nop", idle_function},
 				{"sub", sub_top},
+				{"div", div_Operation},
 				{NULL, NULL}
 				};
 unsigned int i = 0;
