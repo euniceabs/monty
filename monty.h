@@ -83,6 +83,7 @@ void div_Operation(stack_t **head, unsigned int line_counter);
 void mul_top(stack_t **stack, unsigned int line_counter);
 void calc_mod(stack_t **head, unsigned int line_counter);
 void print_Char(stack_t **head, unsigned int line_counter);
+void print_string(stack_t **stack, unsigned int line_counter);
 
 /* Other Utility Functions */
 int exec(char *line_content, stack_t **stack,
