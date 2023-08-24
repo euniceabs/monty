@@ -25,6 +25,7 @@ int exec(char *line_content, stack_t **stack,
 				{"div", div_Operation},
 				{"mul", mul_top},
 				{"mod", calc_mod},
+				{"pchar", print_Char},
 				{NULL, NULL}
 				};
 unsigned int i = 0;
