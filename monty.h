@@ -78,6 +78,7 @@ void init_globalvars(void);
 void f_swap(stack_t **head, unsigned int line_counter);
 void f_add(stack_t **head, unsigned int line_counter);
 void idle_function(stack_t **stack, unsigned int line_counter);
+void sub_top(stack_t **stack_head, unsigned int line_counter);
 
 /* Other Utility Functions */
 int exec(char *line_content, stack_t **stack,

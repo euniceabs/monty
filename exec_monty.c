@@ -21,6 +21,7 @@ int exec(char *line_content, stack_t **stack,
 				{"swap", f_swap},
 				{"add", f_add},
 				{"nop", idle_function},
+				{"sub", sub_top},
 				{NULL, NULL}
 				};
 unsigned int i = 0;
