@@ -1,4 +1,5 @@
 #include "monty.h"
+
 /**
  * exec - This function executes the opcode.
  * @line_content: serves as the line content
@@ -11,6 +12,7 @@
 int exec(char *line_content, stack_t **stack,
 	 unsigned int line_counter, FILE *file)
 {
+
 	instruction_t opst[] = {
 				{"push", f_push},
 				{"pall", f_pall},
@@ -23,7 +25,7 @@ char *op;
 op = strtok(line_content, " \n\t");
 if (op != NULL && op[0] != '#')
 {
-bus.arg = strtok(NULL, " \n\t");
+global_var.arg = strtok(NULL, " \n\t");
 while (opst[i].opcode != NULL)
 {
 if (strcmp(op, opst[i].opcode) == 0)

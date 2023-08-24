@@ -2,13 +2,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define MAX_LINE_LENGTH 50
-bus_t bus = {NULL, NULL, NULL, 0};
 /**
  * main - the code interpreter for monty
  * @argc: the number of arguments
  * @argv: location of the file
  * Return: 0 on success
  */
+
+void init_globalvars(void);
+struct bus global_var;
+
 int main(int argc, char *argv[])
 {
 	FILE *file;
@@ -31,12 +34,12 @@ int main(int argc, char *argv[])
 	exit(EXIT_FAILURE);
 	}
 
-	bus.file = file;
+	init_globalvars();
 
 
 	while ((read_line = getline(&line_content, &size, file)) != -1)
 	{
-		bus.line_content = line_content;
+		global_var.line_content = line_content;
 		line_counter++;
 
 	exec(line_content, &stack, line_counter, file);

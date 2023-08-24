@@ -29,21 +29,21 @@ typedef struct stack_s
 
 
 /**
- * struct bus_s - variables -args, file, line content
+ * struct bus - variables -args, file, line content
  * @arg: value
  * @file: monty file pointer
  * @line_content: content of line
  * @lifi: flag change stack <-> queue
  * Description: carries values through the program
  */
-typedef struct bus_s
+struct bus
 {
 	char *arg;
 	FILE *file;
 	char *line_content;
 	int lifi;
-} bus_t;
-bus_t bus;
+};
+extern struct bus global_var;
 
 
 /**
@@ -74,6 +74,7 @@ void f_queue(stack_t **head, unsigned int counter);
 void addqueue(stack_t **head, int n);
 void f_pint(stack_t **head, unsigned int counter);
 void f_pop(stack_t **head, unsigned int counter);
+void init_globalvars(void);
 
 
 /* Other Utility Functions */

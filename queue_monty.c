@@ -19,7 +19,7 @@ void f_queue(stack_t **head, unsigned int line_counter)
 {
 	(void)head;
 	(void)line_counter;
-	bus.lifi = 1;
+	global_var.lifi = 1;
 }
 /**
  * addqueue - Adds a new node with the specified value

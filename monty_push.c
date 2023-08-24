@@ -17,9 +17,9 @@ void f_push(stack_t **head, unsigned int line_counter)
 	int p = 0;
 	int v;
 	int flag = 0;
-	char *argument = bus.arg;
+	char *argument = global_var.arg;
 
-	if (bus.arg == NULL)
+	if (global_var.arg == NULL)
 	{
 		fprintf(stderr, "L%d: usage: push integer\n", line_counter);
 		exit(EXIT_FAILURE);
@@ -45,7 +45,7 @@ void f_push(stack_t **head, unsigned int line_counter)
 	v = atoi(argument);
 	if (flag == 0)
 	{
-		if (bus.lifi == 0)
+		if (global_var.lifi == 0)
 	{
 		addnode(head, v);
 	} else
