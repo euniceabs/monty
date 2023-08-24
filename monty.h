@@ -43,7 +43,7 @@ typedef struct bus_s
 	char *line_content;
 	int lifi;
 } bus_t;
-bus_t bus;
+extern bus_t bus;
 
 
 /**
@@ -72,7 +72,7 @@ void addnode(stack_t **head, int n);
 void f_push(stack_t **head, unsigned int line_counter);
 void f_queue(stack_t **head, unsigned int counter);
 void addqueue(stack_t **head, int n);
-
+void f_pint(stack_t **head, unsigned int counter);
 
 
 /* Other Utility Functions */
