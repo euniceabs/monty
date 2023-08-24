@@ -27,6 +27,7 @@ int exec(char *line_content, stack_t **stack,
 				{"mod", calc_mod},
 				{"pchar", print_Char},
 				{"pstr", print_string},
+				{"rotl", custom_rotate},
 				{NULL, NULL}
 				};
 unsigned int i = 0;
