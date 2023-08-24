@@ -70,12 +70,12 @@ int exec(char *line_content, stack_t **stack,
 void f_pall(stack_t **head, unsigned int line_counter);
 void addnode(stack_t **head, int n);
 void f_push(stack_t **head, unsigned int line_counter);
-void f_queue(stack_t **head, unsigned int counter);
+void f_queue(stack_t **head, unsigned int line_counter);
 void addqueue(stack_t **head, int n);
-void f_pint(stack_t **head, unsigned int counter);
-void f_pop(stack_t **head, unsigned int counter);
+void f_pint(stack_t **head, unsigned int line_counter);
+void f_pop(stack_t **head, unsigned int line_counter);
 void init_globalvars(void);
-
+void f_swap(stack_t **head, unsigned int line_counter);
 
 /* Other Utility Functions */
 int exec(char *line_content, stack_t **stack,
