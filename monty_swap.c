@@ -10,7 +10,7 @@
 void f_swap(stack_t **head, unsigned int line_counter)
 {
 	stack_t *top = *head;
-        stack_t *second = top->next;
+	stack_t *second = top->next;
 	int temp;
 
 	if (*head == NULL || (*head)->next == NULL)
