@@ -19,6 +19,7 @@ int exec(char *line_content, stack_t **stack,
 				{"pint", f_pint},
 				{"pop", f_pop},
 				{"swap", f_swap},
+				{"add", f_add},
 				{NULL, NULL}
 				};
 unsigned int i = 0;
